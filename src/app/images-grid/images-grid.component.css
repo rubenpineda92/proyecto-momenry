@@ -1,0 +1,73 @@
+.rounded-img {
+  height: 300px;
+  width: 220px;
+  border-radius: 3%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.options-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.hidden-image-element {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hidden-image-element.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-wrapper:hover > .hidden-image-element {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 13px;
+  z-index: 1000;
+}
+
+.detail-wrapper {
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 5px;
+  width: 100%;
+  height: 60px;
+
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+}
+
+.image-descriptor {
+  font-weight: bold;
+  font-size: smaller;
+  color: #707070;
+  margin-bottom: 1px;
+  opacity: 0.8;
+}
+
+.descriptors-container {
+  padding: 10px;
+}
+
+mat-grid-tile {
+  overflow: visible;
+}

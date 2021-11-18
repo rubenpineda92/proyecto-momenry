@@ -1,0 +1,39 @@
+<mat-grid-list cols="5" rowHeight="1:1.5">
+  <mat-grid-tile
+    ><div
+      style="
+        background-color: #0d87e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+      class="rounded-img"
+    >
+      <img
+        src="assets/icons/icon_plus_white.svg"
+        height="60px"
+        width="60px"
+      /></div
+  ></mat-grid-tile>
+  <mat-grid-tile *ngFor="let item of arrImages; let i = index">
+    <div id="{{ 'wrapper-' + i }}" class="image-wrapper">
+      <img [src]="'assets/images/' + item.name + '.png'" class="rounded-img" />
+      <div class="icon-wrapper hidden-image-element">
+        <app-dropdown-icon></app-dropdown-icon>
+      </div>
+      <div class="detail-wrapper hidden-image-element">
+        <div class="row descriptors-container">
+          <div class="col-md-10">
+            <p class="image-descriptor">{{ item.description }}</p>
+            <p class="image-descriptor" style="font-size: x-small">
+              Created {{ item.date | date: "MMMM d" }}
+            </p>
+          </div>
+          <div (click)="fixDescription($event, i)">
+            <img src="assets/icons/icon_fix.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,9 @@
+<div class="alphabet-container">
+  <app-letter-button
+    style="cursor: pointer"
+    *ngFor="let item of alphabet"
+    [letter]="item"
+    (click)="notifyChangedLetter(item)"
+  ></app-letter-button>
+  <app-letter-button class="button" style="cursor: pointer"></app-letter-button>
+</div>

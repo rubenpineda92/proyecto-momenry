@@ -1,0 +1,25 @@
+.search-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  border-radius: 5px;
+  border: hidden;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.search-icon {
+  height: 15px;
+  padding-right: 20px;
+}
+
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}

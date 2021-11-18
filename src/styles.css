@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay"),
+    url(./assets/Font/SFProDisplay/SFProDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplayBold";
+  src: local("SFProDisplayBold"),
+    url(./assets/Font/SFProDisplay/SFProDisplay-Bold.ttf) format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+body {
+  margin: 0;
+  font-family: "SFProDisplay", Arial, Helvetica, sans-serif;
+}

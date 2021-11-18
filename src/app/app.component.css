@@ -1,0 +1,45 @@
+.whiteboard {
+  background-color: white;
+  border-radius: 1%;
+
+  padding: 25px;
+}
+
+.whiteboard::before {
+  content: "";
+  position: absolute;
+  top: var(--markerPosition);
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #0d87e3;
+  height: 35px;
+  font-size: small;
+  color: #fafcfe;
+}
+
+.button-container {
+  padding-left: 0px;
+}
+
+.searchbar-container {
+  padding-right: 5px;
+  padding-bottom: 25px;
+}
+
+.grid-container {
+  max-height: 730px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app-container {
+  max-width: 100%;
+}

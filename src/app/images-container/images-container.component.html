@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-3" class="board-title">
+    <app-letter-button [letter]="currentLetter"></app-letter-button>
+    <span class="board-title-item">Design Board 2021</span>
+    <img
+      class="board-title-item hover-highlight"
+      src="assets/icons/icon_options.svg"
+      width="30px"
+      height="30px"
+    />
+  </div>
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="active"
+    class="nav-tabs justify-content-end col-md-9"
+  >
+    <li [ngbNavItem]="1">
+      <a ngbNavLink class="tabText">Images</a>
+      <ng-template ngbNavContent>
+        <div style="padding: 20px">
+          <app-imagegrid-customizer></app-imagegrid-customizer>
+          <app-images-grid></app-images-grid>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink class="tabText">Projects</a>
+      <ng-template ngbNavContent>
+        <div>
+          <p>
+            {{ lorem }}
+          </p>
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+</div>
+
+<div [ngbNavOutlet]="nav" class="mt-2 col-md-12"></div>

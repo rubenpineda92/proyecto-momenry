@@ -1,0 +1,31 @@
+<div class="row app-container">
+  <div class="col-md-1">
+    <app-alphabet-list
+      (letterSelectionEvent)="updateCurrentLetter($event)"
+    ></app-alphabet-list>
+  </div>
+  <div class="col-md-11 whiteboard">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4 searchbar-container">
+            <app-searchbar></app-searchbar>
+          </div>
+          <div class="col-md-2 button-container">
+            <label class="btn-primary" ngbButtonLabel>
+              Upgrade your Plan
+            </label>
+          </div>
+          <div class="col-md-6">
+            <app-profile></app-profile>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 grid-container">
+        <app-images-container
+          [currentLetter]="currentLetter"
+        ></app-images-container>
+      </div>
+    </div>
+  </div>
+</div>

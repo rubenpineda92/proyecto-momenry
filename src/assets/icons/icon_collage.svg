@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icon_collage" transform="translate(-4.299)">
+    <g id="Grupo_1308" data-name="Grupo 1308" transform="translate(4.299 0)">
+      <g id="Rectángulo_462" data-name="Rectángulo 462" transform="translate(0)" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="13" height="13" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="11" height="11" rx="1" fill="none"/>
+      </g>
+      <g id="Rectángulo_463" data-name="Rectángulo 463" transform="translate(0 17)" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="13" height="13" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="11" height="11" rx="1" fill="none"/>
+      </g>
+      <g id="Rectángulo_465" data-name="Rectángulo 465" transform="translate(17)" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="13" height="13" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="11" height="11" rx="1" fill="none"/>
+      </g>
+      <g id="Rectángulo_466" data-name="Rectángulo 466" transform="translate(17 17)" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="13" height="13" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="11" height="11" rx="1" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

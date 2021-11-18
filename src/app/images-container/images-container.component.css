@@ -1,0 +1,40 @@
+.tabText {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 10;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs > li > a.active {
+  background-color: #f2f2f2;
+}
+
+div.tab-content {
+  background-color: #f2f2f2;
+  margin-top: 0 !important;
+}
+
+.mt-2.tab-content {
+  border-radius: 10px;
+}
+
+.board-title {
+  padding-left: 40px;
+  display: flex;
+}
+
+.board-title-item {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.hover-highlight:hover {
+  filter: invert(37%) sepia(78%) saturate(2136%) hue-rotate(186deg)
+    brightness(95%) contrast(90%);
+}

@@ -1,0 +1,47 @@
+<div class="row wrapper">
+  <div class="col-md-7"><p class="title">All images</p></div>
+  <div class="col-md-5">
+    <div class="simple-padding">
+      <div
+        id="dropdown-id"
+        ngbDropdown
+        class="d-inline-block"
+        (openChange)="updateDropdown($event)"
+      >
+        <button
+          class="btn btn-outline-primary white-background"
+          id="dropdownBasic1"
+          ngbDropdownToggle
+          style="color: #707070"
+        >
+          Last Created
+          <img
+            id="arrow-icon"
+            src="assets/icons/icon_dropdown.svg"
+            style="padding-left: 5px"
+          />
+        </button>
+        <div
+          ngbDropdownMenu
+          aria-labelledby="dropdownBasic1"
+          class="white-background"
+        >
+          <button ngbDropdownItem>Last Modified</button>
+          <button ngbDropdownItem>Last Opened</button>
+          <button ngbDropdownItem>Alphabetically</button>
+        </div>
+      </div>
+      <img
+        class="simple-padding icons active"
+        src="assets/icons/icon_collage.svg"
+        (click)="remarkIcon($event)"
+      />
+      <img
+        class="simple-padding icons"
+        src="assets/icons/icon_list.svg"
+        (click)="remarkIcon($event)"
+      />
+    </div>
+  </div>
+</div>
+<div class="row"></div>

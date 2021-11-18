@@ -1,0 +1,110 @@
+.action {
+}
+
+.action .menu {
+  position: absolute;
+  top: 80px;
+  right: -75px;
+  padding: 10px, 0px;
+  background-color: white;
+  width: 150px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  height: 177px;
+}
+
+.action .menu.active {
+  top: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 75px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.action .icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.action .menu ul li {
+  padding-left: 1px;
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  direction: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action .menu ul li img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+ul {
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.action .menu ul li {
+  overflow: hidden;
+}
+
+.action .menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.first-element:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.last-element:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.last-element {
+}
+
+.first-element:hover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 75px;
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  transform: rotate(45deg);
+
+  position: absolute;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-size: small;
+}
+
+.icon-container img {
+  filter: invert(00%) sepia(0%) saturate(1%) hue-rotate(332deg) brightness(101%)
+    contrast(101%);
+}

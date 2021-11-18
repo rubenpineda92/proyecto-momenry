@@ -1,0 +1,18 @@
+<div
+  *ngIf="letter.letter"
+  class="letter-container"
+  [style.background-color]="letter.color"
+>
+  <p class="letter-item">{{ letter.letter }}</p>
+</div>
+<div
+  *ngIf="!letter.letter"
+  class="letter-container"
+  [style.background-color]="letter.color"
+>
+  <img
+    *ngIf="!letter.letter"
+    src="assets/icons/icon_plus_grey.svg"
+    class="letter-item"
+  />
+</div>
