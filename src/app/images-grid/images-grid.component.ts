@@ -9,7 +9,7 @@ import { AppImage } from '../models/Images';
 export class ImagesGridComponent implements OnInit {
 
   arrImages:AppImage[] = [];
-
+  numCols:number = 5
   fixIconUrl:string = 'assets/icons/icon_fix.svg';
   fixedIconUrl:string = 'assets/icons/icon_fixed.svg';
 
@@ -21,6 +21,13 @@ export class ImagesGridComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const innerWidth:number = (window.innerWidth * 0.9);
+    const imgWidth = 250;
+
+    const supportedColumns = innerWidth / imgWidth;
+
+    this.numCols = supportedColumns >= 2 ? supportedColumns : 2;
+
   }
 
   fixDescription(event:MouseEvent, index:number){
